@@ -7,4 +7,4 @@ export async function loadrecipe(){
 
 }
 
-console.log(loadrecipe());
+// console.log(loadrecipe());

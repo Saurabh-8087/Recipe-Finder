@@ -6,10 +6,8 @@ function searchRecipes(){
   const searchInput = document.getElementById('ingredientSearch').value.toLowerCase(); 
 
   const filteredRecipes = recipes.filter(recipe =>
-    recipe.ingredients.some(ingredient => ingredient.toLowerCase().includes(searchInput))
+    recipe.ingredients.some(ingredient => ingredient.toLowerCase().includes(searchInput)) 
   );
-
-  console.log(displayRecipe(filteredRecipes));
 }
 
 window.searchRecipes = searchRecipes;
@@ -30,6 +28,14 @@ function displayRecipe(recipeArray){
       <button class="js-details-button  detalis-button">Details</button>
     `;
 
+    const detailButton = recipeCard.querySelector('.js-details-button');
+
+
+    detailButton.addEventListener('click' , () =>{
+      localStorage.setItem('selectRecipe', JSON.stringify(recipe));
+
+      window.location.href="detailsRecipe.html";
+    });
     
     recipeList.appendChild(recipeCard);
 
