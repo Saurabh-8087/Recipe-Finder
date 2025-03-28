@@ -2,6 +2,18 @@ import { loadrecipe } from "./recipe-data.js";
 
 let recipes = [];
 
+function searchRecipes(){
+  const searchInput = document.getElementById('ingredientSearch').value.toLowerCase(); 
+
+  const filteredRecipes = recipes.filter(recipe =>
+    recipe.ingredients.some(ingredient => ingredient.toLowerCase().includes(searchInput))
+  );
+
+  console.log(displayRecipe(filteredRecipes));
+}
+
+window.searchRecipes = searchRecipes;
+
 function displayRecipe(recipeArray){
   const recipeList = document.getElementById('recipeList');
   recipeList.innerHTML='';
