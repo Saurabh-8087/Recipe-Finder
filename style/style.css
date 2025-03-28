@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #7c9bb0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  width: 50%;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.detalis-button {
+  background-color: #3498db; 
+  color: white; 
+  font-size: 1rem;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: ba
+}
+
+
+.detalis-button:hover {
+  background-color: #2980b9; 
+  transform: scale(1.05); 
+}
+
+
+.detalis-button:focus {
+  outline: 2px solid #2980b9; 
+  outline-offset: 4px;
+}
+
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.recipe-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 200px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.recipe-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.recipe-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.recipe-details {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.recipe-details h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.recipe-details p {
+  font-size: 16px;
+  color: #555;
+}
