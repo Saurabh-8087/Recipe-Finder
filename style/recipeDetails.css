@@ -43,7 +43,7 @@ h1 {
 }
 
 .recipe-details img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   border-radius: 8px;
   margin: 15px 0;

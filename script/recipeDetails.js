@@ -1,6 +1,6 @@
 function recipeDetails(){
 
-  const recipe = JSON.parse(localStorage.getItem('selectRecipe'));
+  const recipe =  (localStorage.getItem('selectRecipe'));
 
 
   if(recipe){

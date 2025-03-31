@@ -7,7 +7,11 @@ function searchRecipes(){
 
   const filteredRecipes = recipes.filter(recipe =>
     recipe.ingredients.some(ingredient => ingredient.toLowerCase().includes(searchInput)) 
+    
+
   );
+
+  displayRecipe(filteredRecipes);
 }
 
 window.searchRecipes = searchRecipes;
